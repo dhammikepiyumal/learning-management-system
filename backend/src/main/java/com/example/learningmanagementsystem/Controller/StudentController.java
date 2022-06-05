@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 public class StudentController {
 
@@ -23,7 +24,7 @@ public class StudentController {
         return studentRepository.findAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deleteStudent(@PathVariable String id) {
         studentRepository.deleteById(id);
     }
