@@ -18,16 +18,6 @@ const Header = () => {
                   <i className="fas fa-shopping-cart"></i>Add new Student
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/list">
-                <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>List All Students
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/delete">
-                <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>Delete Student
-                </Nav.Link>
-              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
